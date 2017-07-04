@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">XuLyInputText</string>
+    <string-array name="arrDataSpinner">
+        <item>Goldin</item>
+        <item>Elf</item>
+        <item>Human</item>
+        <item>Troll</item>
+        <item>Halfing</item>
+    </string-array>
+</resources>

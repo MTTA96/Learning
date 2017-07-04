@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="com.example.user.demoslidemenu.fragment.SinhVienFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:id="@+id/etMSSV_SinhVienFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="MSSV"/>
+    <EditText
+        android:id="@+id/etNamSinh_SinhVienFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Năm sinh"/>
+    <EditText
+        android:id="@+id/etToan_SinhVienFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Toán"/>
+    <EditText
+        android:id="@+id/etLy_SinhVienFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lý"/>
+    <EditText
+        android:id="@+id/etHoa_SinhVienFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hóa"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnThem_SinhVienFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Thêm"/>
+        <Button
+            android:id="@+id/btnDanhSach_SinhVienFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Danh sách"/>
+        <Button
+            android:id="@+id/btnNhapLai_SinhVienFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Nhập lại"/>
+    </LinearLayout>
+
+</LinearLayout>

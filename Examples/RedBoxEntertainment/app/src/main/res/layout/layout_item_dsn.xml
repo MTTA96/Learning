@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="CD"
+        android:id="@+id/tvTenCDN"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_width="115dp" />
+
+    <TextView
+        android:id="@+id/tvCaSi"
+        android:layout_height="wrap_content"
+        android:text="Ca Sĩ"
+        android:gravity="center"
+        android:layout_width="85dp" />
+
+    <TextView
+        android:id="@+id/tvGiaCDN"
+        android:text="Giá"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_width="75dp" />
+
+    <TextView
+        android:id="@+id/tvCodeCDN"
+        android:text="Code"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_width="50dp" />
+
+    <TextView
+        android:id="@+id/tvSoLuongCDN"
+        android:text="SL"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+
+</LinearLayout>

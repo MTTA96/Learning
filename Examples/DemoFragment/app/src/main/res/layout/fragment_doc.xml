@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.demofragment.frag.DocFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!-- Bài 2 -->
+    <LinearLayout
+        android:id="@+id/layoutBai1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Ngày"
+            android:ems="10"
+            android:layout_marginTop="5dp"
+            android:id="@+id/etInputNgay_FragmentDoc" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Tháng"
+            android:ems="10"
+            android:layout_marginTop="5dp"
+            android:id="@+id/etInputThang_FragmentDoc" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Năm"
+            android:ems="10"
+            android:layout_marginTop="5dp"
+            android:id="@+id/etInputNam_FragmentDoc" />
+
+        <TextView
+            android:id="@+id/tvOutputNgay_FragmentDoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+    <!-- Bài 4 -->
+    <TextView
+        android:id="@+id/titleTinhBieuThuc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tính biểu thức:"
+        android:layout_below="@+id/layoutBai1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"/>
+    <LinearLayout
+        android:id="@+id/layoutTinhBieuThuc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/titleTinhBieuThuc"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="x = " />
+        <EditText
+            android:id="@+id/etInputNumberX_FragmentDoc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btnTinhBieuThuc_FragmentDoc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Tính"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvResultBinhPhuong_FragmentDoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutTinhBieuThuc"
+        android:text="Kết quả:"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>

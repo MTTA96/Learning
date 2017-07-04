@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.greenacademy.handlefileapp.MainActivity">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="//tên file"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:id="@+id/etTenFile" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:inputType="textMultiLine"
+        android:hint="//đoạn văn bản"
+        android:ems="10"
+        android:layout_below="@+id/etTenFile"
+        android:layout_marginTop="31dp"
+        android:id="@+id/etDoanVanBan"
+        android:layout_height="200dp"
+        android:gravity="top"/>
+
+    <TextView
+        android:text=". Thông báo lỗi (nếu có)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:id="@+id/tvThongBaoLoi"
+        android:layout_below="@+id/etDoanVanBan"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvThongBaoLoi"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:text="Ghi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGhi"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:text="Đọc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDoc" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xóa file"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btnXoa" />
+
+        <Button
+            android:text="Go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRaw" />
+    </LinearLayout>
+</RelativeLayout>

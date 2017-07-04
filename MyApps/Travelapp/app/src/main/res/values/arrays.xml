@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arr_ten_dia_diem">
+        <item>Vũng Tàu</item>
+        <item>Phan Thiết</item>
+        <item>Đà Nẵng</item>
+    </string-array>
+
+    <string-array name="arr_description">
+        <item>Vũng Tàu là thành phố biển thuộc tỉnh Bà Rịa – Vũng Tàu. Bãi Sau là bãi biển thường được khách du lịch Vũng Tàu lựa chọn để tắm biến nhất. Ngoài ra, Vũng Tàu cũng có những điểm tham quan đáng chú ý như Tượng Chúa Kitô Vua trên núi Nhỏ, Chùa Thích Ca Phật Đài và tòa Bạch Dinh nằm sát biển. Lễ hội Nghinh Ông và lễ hội Dinh Cô là hai lễ hội văn hóa nổi bật nhất của Vũng Tàu.</item>
+        <item>Phan Thiết là thành phố biển, trung tâm kinh tế và văn hóa của tỉnh Bình Thuận. Với các địa danh nổi tiếng như Mũi Né và Mũi Kê Gà, Phan Thiết là điểm đến lý tưởng cho những người mê du lịch biển. Ngoài ra trong nội thành Phan Thiết còn có khu phố Tây với không gian văn hóa đặc sắc theo phong cách châu Âu. Một số điểm tham quan đáng chú ý khác khi du lịch Phan Thiết là Lầu Ông Hoàng, nhà Mộng Cầm (người tình của Hàn Mặc Tử), đồi cát Mũi Né, làng chài Mũi Né, Tháp Chàm, Chùa Núi Tà Cú…</item>
+        <item>Đà Nẵng một trong những thành phố sạch và đẹp nhất tại Việt Nam, có tốc độ phát triển kinh tế nhanh. Là thành phố có nhiều danh lam thắng cảnh nổi tiếng như: Ngũ Hành Sơn, Đảo Cù lao Chàm, sông Hàn… và nhiều khu vui chơi giải trí. Đặc biệt, Đà Nẵng có nhiều cây cầu đi vào huyền thoại với kiến trúc độc đáo như Cầu Rồng, Cầu Sông Hàn.</item>
+    </string-array>
+
+    <array name="arr_images">
+        <item>@mipmap/vungtau</item>
+        <item>@mipmap/phanthiet</item>
+        <item>@mipmap/danang</item>
+    </array>
+
+</resources>

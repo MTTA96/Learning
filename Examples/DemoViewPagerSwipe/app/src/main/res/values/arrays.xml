@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="menu_slide_sinhvien">
+        <item>Nhập Thông Tin Sinh Viên</item>
+        <item>Điểm Trung Bình Sinh Viên</item>
+        <item>Thông Tin Sinh Viên</item>
+    </array>
+</resources>

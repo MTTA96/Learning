@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.demofragment.frag.NgangFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!-- Bài 3 -->
+    <TextView
+        android:id="@+id/titleTinhBinhPhuong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tính bình phương:"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"/>
+    <LinearLayout
+        android:id="@+id/layoutTinhBinhPhuong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/titleTinhBinhPhuong"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="x = " />
+        <EditText
+            android:id="@+id/etInputNumberX_FragmentNgang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btnTinhBinhPhuong_FragmentNgang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Tính"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvResultBinhPhuong_FragmentNgang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutTinhBinhPhuong"
+        android:text="Kết quả:"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <!-- Bài 5 -->
+    <TextView
+        android:id="@+id/titleTinhCanBacHai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tính Căn bậc hai:"
+        android:layout_below="@+id/tvResultBinhPhuong_FragmentNgang"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"/>
+    <LinearLayout
+        android:id="@+id/layoutTinhCanBacHai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/titleTinhCanBacHai"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="x = " />
+        <EditText
+            android:id="@+id/etInputNumberXTinhCanBacHai_FragmentNgang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btnTinhCanBacHai_FragmentNgang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Tính"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvResultCanBacHai_FragmentNgang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutTinhCanBacHai"
+        android:text="Kết quả:"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+</RelativeLayout>

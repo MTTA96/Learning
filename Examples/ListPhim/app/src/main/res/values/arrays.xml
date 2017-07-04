@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="film_image">
+        <item>@drawable/image1</item>
+        <item>@drawable/image2</item>
+        <item>@drawable/image3</item>
+        <item>@drawable/image4</item>
+    </array>
+
+    <array name="ten_film">
+        <item>Mechanic: Resurrection</item>
+        <item>ONE PIECE FILM: GOLD</item>
+        <item>DON\'T BREATHE</item>
+        <item>PETE\'T DRAGON</item>
+    </array>
+
+    <array name="description">
+        <item>:Sát thủ nguy hiểm Arthur Bishop (Jason Statham) muốn gác lại quá khứ của mình và bắt đầu một cuộc sống mới. Nhưng khi kẻ thù đáng gờm nhất của Arthur bắt cóc bạn gái anh, Arthur buộc phải thực hiện 3 vụ ám sát và làm cho chúng chỉ giống như những tai nạn</item>
+        <item>Trong bộ phim lần này, băng hải tặc Mũ Rơm sẽ phải đối đầu với Guild Tesoro, kẻ sở hữu trái ác quỷ Gold - Gold và là chủ nhân của Gran Tesoro - Thành phố giải trí nổi bằng vàng lớn nhất thế giới. Gran Tesoro là một thành phố độc lập, quy tụ hàng trăm tay chơi và hải tặc trên khắp thế giới; một nơi mà đến chính phủ cũng không thể kiểm soát. Guild Tesoro thống trị tất cả mọi thứ, thậm chí là hải tặc hay chính phủ bằng Vàng và tham vọng của hắn ngày càng lớn dần. Cán cân quyền lực của Tân thế giới bắt đầu thay đổi từ đây …</item>
+        <item>Ba tên trộm liều lĩnh đột nhập vào nhà một người đàn ông giàu có bị mù. Lũ trộm cho rằng bản thân sẽ vớ bở, thế nhưng chúng đã sai.</item>
+        <item>Trong nhiều năm, người thợ khắc gỗ Meacham (Robert Redford thủ vai) vẫn thường kể cho những đứa trẻ nghe câu chuyện về một con rồng hung dữ sống sâu trong khu rừng Tây Bắc. Nhưng cô con gái đang làm kiểm lâm của ông, Grace (Bryce Dallas Howard) chỉ xem những câu chuyện trên như cổ tích hư cấu cho đến khi cô gặp Pete (Oakes Fegley). Pete là một cậu bé 10 tuổi bí ẩn, mồ côi và sống trong khu rừng với một con rồng màu xanh khổng lồ tên Elliott. Và theo lời Pete mô tả, người bạn đặc biệt này rất giống với con rồng đã xuất hiện trong những câu chuyên của ông Meacham. Cùng với sự giúp đỡ của cô bé 11 tuổi Natalie (Oona Laurence), con gái của chủ xưởng gỗ Jack (Wes Bentley), Grace đã dần khám phá ra nguồn gốc của Pete và sự thật về người bạn rồng kì lạ kia.</item>
+    </array>
+
+    <array name="urls">
+        <item>http://hdonline.vn/phim-sat-thu-tho-may-su-tai-xuat-12463.html#VtMODhLgIgoTUFcV.97</item>
+        <item>https://www.galaxycine.vn/phim/one-piece-film-gold</item>
+        <item>http://hdonline.vn/phim-dont-breathe-12339.html#Tze68pQAjMIsdcRK.97</item>
+        <item>http://hdonline.vn/phim-petes-dragon-9585.html#P8q8k4pmWqRdeV4o.97</item>
+    </array>
+</resources>

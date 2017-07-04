@@ -1,0 +1,11 @@
+﻿git: quan ly source
+github (bán theo project), bitbucket(theo user, dc private)
+
+tool: source tree
+tool merge: kdiff3/diffmerge  (tool -> diff)
+SSH: chứng thực bảo mật
+
+branches: trên máy
+remotes: tren server
+
+!: xung đột code

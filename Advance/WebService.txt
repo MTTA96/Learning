@@ -1,0 +1,5 @@
+get, post, put, delete, ...
+
+get: khong ghi data vao outputstream
+
+check 2 TH http_ok, http_created

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arr_viec_lam">
+        <item></item>
+        <item>Học sinh</item>
+        <item>Giáo viên</item>
+        <item>Phụ huynh</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Lab05_DemoSpinner</string>
+    <string-array name="arr_time">
+        <item>01:00 am</item>
+        <item>03:00 am</item>
+        <item>04:00 am</item>
+        <item>05:00 am</item>
+        <item>06:00 am</item>
+        <item>07:00 am</item>
+        <item>08:00 am</item>
+        <item>09:00 am</item>
+        <item>10:00 am</item>
+        <item>11:00 am</item>
+        <item>12:00 am</item>
+        <item>01:00 pm</item>
+        <item>02:00 pm</item>
+        <item>03:00 pm</item>
+        <item>04:00 pm</item>
+        <item>05:00 pm</item>
+        <item>06:00 pm</item>
+        <item>07:00 pm</item>
+        <item>08:00 pm</item>
+        <item>09:00 pm</item>
+        <item>10:00 pm</item>
+        <item>11:00 pm</item>
+        <item>12:00 pm</item>
+    </string-array>
+
+    <string-array name="arr_work">
+        <item>Giặt đồ</item>
+        <item>Quét nhà</item>
+        <item>Nấu cơm</item>
+        <item>Tắm</item>
+        <item>Học</item>
+    </string-array>
+</resources>

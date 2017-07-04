@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mtta.demoservices.MainActivity">
+
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="stop"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnStart"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/btnDemChan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnStop"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="51dp"
+        android:layout_toLeftOf="@+id/btnStop"
+        android:layout_toStartOf="@+id/btnStop"
+        android:text="Đếm chẵn" />
+
+    <Button
+        android:id="@+id/btnDemLe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnDemChan"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="Đếm lẻ" />
+
+    <TextView
+        android:id="@+id/tv_LE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_Chan"
+        android:layout_alignBottom="@+id/tv_Chan"
+        android:layout_alignEnd="@+id/btnDemLe"
+        android:layout_alignRight="@+id/btnDemLe"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tv_Chan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnDemLe"
+        android:layout_alignEnd="@+id/btnDemChan"
+        android:layout_alignRight="@+id/btnDemChan"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/btnDemSo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnDemChan"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/btnDemChan"
+        android:layout_marginBottom="22dp"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnDemSo"
+        android:layout_alignLeft="@+id/btnDemLe"
+        android:layout_alignStart="@+id/btnDemLe"
+        android:text="Button" />
+
+    <TextView
+        android:id="@+id/tvBindService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnDemSo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="37dp"
+        android:text="TextView" />
+
+
+</RelativeLayout>

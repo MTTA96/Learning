@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="list_ten_bai_hat">
+        <item>Tìm Lại Bầu Trời</item>
+        <item>Buông Đôi Tay Nhau Ra</item>
+        <item>Blank Space</item>
+    </string-array>
+
+    <string-array name="list_ten_ca_si">
+        <item>Tuấn Hưng</item>
+        <item>Sơn Tùng M-TP</item>
+        <item>Taylor Swift</item>
+    </string-array>
+
+    <string-array name="list_thoi_gian">
+        <item>5:28</item>
+        <item>3:46</item>
+        <item>5:20</item>
+    </string-array>
+
+    <array name="list_anh_ca_si">
+        <item>@drawable/tuanhung</item>
+        <item>@drawable/sontungmtp</item>
+        <item>@drawable/taylorswitf</item>
+    </array>
+</resources>

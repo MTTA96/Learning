@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/iv_DiaDiem_ItemList"
+        android:scaleType="fitXY"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- lượt view -->
+        <LinearLayout
+            android:id="@+id/layout_luot_view_ItemList"
+            android:orientation="horizontal"
+            android:layout_width="@dimen/item_luot_view_width"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/background">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/btn_star"
+                android:id="@+id/imageView2" />
+
+            <TextView
+                android:id="@+id/tv_LuotView_ItemList"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="123213"
+                android:textColor="@color/textColor"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <!-- lượt thích -->
+        <LinearLayout
+            android:id="@+id/layout_luot_thich_ItemList"
+            android:layout_width="@dimen/item_luot_thich_width"
+            android:layout_height="25dp"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/layout_luot_view_ItemList"
+            android:background="@color/background">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/btn_star"/>
+
+            <TextView
+                android:id="@+id/tvLike_ItemList"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="98765"
+                android:textColor="@color/textColor"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <!-- rating -->
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/layout_luot_thich_ItemList"
+            android:background="@color/background">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/btn_star" />
+
+            <TextView
+                android:id="@+id/tvRating_ItemList"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="8.0"
+                android:textColor="@android:color/white"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_Description_ItemList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="@color/textColor"
+            android:maxLines="2"
+            android:layout_alignParentBottom="true"
+            android:background="@color/background"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_TenDiaDia_ItemList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="25dp"
+            android:textColor="@color/textColor"
+            android:maxLines="1"
+            android:layout_above="@+id/tv_Description_ItemList"
+            android:background="@color/background"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+    </RelativeLayout>
+</FrameLayout>

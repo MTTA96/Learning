@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ExitProgram</string>
+    <string name="thoat">Thoát</string>
+    <string name="huy">Hủy</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arr_phone">
+        <item>Samsung</item>
+        <item>HTC</item>
+        <item>Apple</item>
+        <item>Nokia</item>
+        <item>WindowsPhone</item>
+        <item>BlackBerry</item>
+        <item>Sony</item>
+        <item>LG</item>
+        <item>Asus</item>
+        <item>Oppo</item>
+        <item>Mobiistar</item>
+        <item>Sky</item>
+        <item>blah blah</item>
+    </string-array>
+</resources>

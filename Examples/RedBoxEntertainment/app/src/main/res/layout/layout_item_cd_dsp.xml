@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="CD"
+        android:id="@+id/tvTenCDP"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tvDaoDien"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:text="Đao Diễn"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tvGiaCDP"
+        android:text="Giá"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tvCodeCDP"
+        android:text="Code"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tvSoLuongCDP"
+        android:text="SL"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+
+</LinearLayout>

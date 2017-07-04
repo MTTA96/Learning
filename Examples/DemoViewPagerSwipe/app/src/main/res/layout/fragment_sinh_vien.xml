@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="hte.edu.demoviewpagerswipe.fragment.SinhVienFragment"
+    android:padding="20dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:id="@+id/etMSSV_FragmentSinhVien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="MSSV"/>
+
+    <EditText
+        android:id="@+id/etTenSinhVien_FragmentSinhVien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên Sinh Viên"/>
+
+    <EditText
+        android:id="@+id/etDiemLyThuyet_FragmentSinhVien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Điểm lý thuyết"/>
+
+    <EditText
+        android:id="@+id/etDiemThuHanh_FragmentSinhVien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Điểm thực hành"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+        <Button
+            android:id="@+id/btnThem_FragmentSinhVien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thêm"/>
+        <Button
+            android:id="@+id/btnXoa_FragmentSinhVien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xóa"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:title="GamePad"
+            android:id="@+id/itemGamePad" />
+        <item android:title="Camera"
+            android:id="@+id/itemCamera" />
+        <item android:title="Video"
+            android:id="@+id/itemVideo" />
+        <item android:title="Email"
+            android:id="@+id/itemEmail" />
+    </menu>

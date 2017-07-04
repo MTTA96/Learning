@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">HomeAssistance</string>
+    <string name="title_ht_solution">HT Solution></string>
+    <string name="title_password">Nhập mật khẩu</string>
+    <string name="title_user">Tên người dùng</string>
+    <string name="user">User(*):</string>
+    <string name="password">Password(*):</string>
+    <string name="login">Đăng Nhập</string>
+    <string name="signup">Đăng Ký</string>
+    <string name="remember">Remember me</string>
+
+    <!-- Màn hình đăng ký -->
+    <string name="email">Email(*):</string>
+    <string name="phone">Số điện thoại(*):</string>
+    <string name="cmnd">Số CMND\n(Thẻ căn cước)(*):</string>
+    <string name="adress">Địa chỉ(nơi ở)(*):</string>
+    <string name="image">Ảnh:</string>
+    <string name="capture">Capture</string>
+    <string name="back">Trở về</string>
+    <string name="next">Tiếp tục</string>
+
+    <!-- Màn hình xác thực-->
+    <string name="yeu_cau_qua_mail">Yêu cầu gửi lại mã xác thực qua email</string>
+    <string name="yeu_cau_qua_phone">Yêu cầu gửi lại mã xác thức qua điện thoại</string>
+    <string name="xac_nhan_ma">Xác nhận mã yêu cầu</string>
+</resources>
