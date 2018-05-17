@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uMZ-pX-VHP">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Noteworthy.ttc">
+            <string>Noteworthy-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="ZNX-Wy-wq5">
+            <objects>
+                <viewController storyboardIdentifier="LoginVC" id="uMZ-pX-VHP" customClass="LoginViewController" customModule="Restaurants" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i8U-Jx-KCp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="No0-O1-hiS">
+                                <rect key="frame" x="0.0" y="70" width="414" height="441"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurants" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hp0-rX-4T7">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="147"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="53"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zKl-33-tG0">
+                                        <rect key="frame" x="0.0" y="147" width="414" height="147"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="res1" translatesAutoresizingMaskIntoConstraints="NO" id="Zfg-IA-A3v">
+                                                <rect key="frame" x="0.0" y="0.0" width="138" height="147"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="res2" translatesAutoresizingMaskIntoConstraints="NO" id="rks-Is-aSB">
+                                                <rect key="frame" x="138" y="0.0" width="138" height="147"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="res3" translatesAutoresizingMaskIntoConstraints="NO" id="f5c-Hu-1Xh">
+                                                <rect key="frame" x="276" y="0.0" width="138" height="147"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rVV-IH-P5p">
+                                        <rect key="frame" x="0.0" y="294" width="414" height="147"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="res4" translatesAutoresizingMaskIntoConstraints="NO" id="vac-VC-1kL">
+                                                <rect key="frame" x="0.0" y="0.0" width="138" height="147"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="res5" translatesAutoresizingMaskIntoConstraints="NO" id="qZW-2v-w1S">
+                                                <rect key="frame" x="138" y="0.0" width="138" height="147"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="res6" translatesAutoresizingMaskIntoConstraints="NO" id="2CP-Yq-Dbi">
+                                                <rect key="frame" x="276" y="0.0" width="138" height="147"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7TK-vU-4RH">
+                                <rect key="frame" x="40" y="561" width="334" height="125"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jy4-qz-kOo" customClass="GIDSignInButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="57.666666666666664"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZA7-Mm-e5v" customClass="FBSDKLoginButton">
+                                        <rect key="frame" x="0.0" y="67.666666666666629" width="334" height="57.333333333333343"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2144102752" green="0.27735218410000001" blue="0.31144320959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="No0-O1-hiS" firstAttribute="trailing" secondItem="Ph4-Tx-FAt" secondAttribute="trailing" id="DZa-E7-kot"/>
+                            <constraint firstItem="No0-O1-hiS" firstAttribute="top" secondItem="Ph4-Tx-FAt" secondAttribute="top" constant="50" id="Egr-8L-9sA"/>
+                            <constraint firstItem="No0-O1-hiS" firstAttribute="leading" secondItem="Ph4-Tx-FAt" secondAttribute="leading" id="IQO-O8-BBc"/>
+                            <constraint firstItem="7TK-vU-4RH" firstAttribute="leading" secondItem="Ph4-Tx-FAt" secondAttribute="leading" constant="40" id="SOs-et-RyO"/>
+                            <constraint firstItem="Ph4-Tx-FAt" firstAttribute="trailing" secondItem="7TK-vU-4RH" secondAttribute="trailing" constant="40" id="TqW-Uq-nv0"/>
+                            <constraint firstItem="Ph4-Tx-FAt" firstAttribute="bottom" secondItem="7TK-vU-4RH" secondAttribute="bottom" constant="50" id="i9K-Tc-scu"/>
+                            <constraint firstItem="7TK-vU-4RH" firstAttribute="height" secondItem="i8U-Jx-KCp" secondAttribute="height" multiplier="0.17" id="o8g-e0-81q"/>
+                            <constraint firstItem="7TK-vU-4RH" firstAttribute="top" secondItem="No0-O1-hiS" secondAttribute="bottom" constant="50" id="xgI-22-ynC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ph4-Tx-FAt"/>
+                    </view>
+                    <connections>
+                        <outlet property="fbLogin" destination="ZA7-Mm-e5v" id="MD9-Pc-hJv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4BL-G0-i5O" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1215" y="-150"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="res1" width="700" height="394"/>
+        <image name="res2" width="800" height="450"/>
+        <image name="res3" width="576" height="384"/>
+        <image name="res4" width="900" height="600"/>
+        <image name="res5" width="830" height="551"/>
+        <image name="res6" width="275" height="183"/>
+    </resources>
+</document>

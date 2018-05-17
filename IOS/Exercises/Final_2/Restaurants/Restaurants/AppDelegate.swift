@@ -7,15 +7,33 @@
 //
 
 import UIKit
+import Firebase
+import GoogleSignIn
+import GoogleMaps
+import GooglePlaces
+import FBSDKCoreKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    let googleMapApiKey = "AIzaSyA28N7uhyRUjreBvrrrokzvjo-aEijyVts"
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Configure firebase
+        FirebaseApp.configure()
+        
+        // Google auth
+        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
+        GIDSignIn.sharedInstance().delegate = self
+        GIDSignIn.sharedInstance().signInSilently()
+        
+        // Google map
+        GMSServices.provideAPIKey(googleMapApiKey)
+        GMSPlacesClient.provideAPIKey(googleMapApiKey)
+        
         return true
     }
 
@@ -41,6 +59,50 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+}
 
+// MARK: - GIDSignInDelegate
+
+extension AppDelegate: GIDSignInDelegate {
+    
+    @available(iOS 9.0, *)
+    func application(_ application: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any])
+        -> Bool {
+            return GIDSignIn.sharedInstance().handle(url,
+                                                     sourceApplication:options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String,
+                                                     annotation: [:])
+    }
+    
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        return GIDSignIn.sharedInstance().handle(url,
+                                                 sourceApplication: sourceApplication,
+                                                 annotation: annotation)
+    }
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        if let error = error {
+            print(error.localizedDescription)
+            return
+        }
+        
+        guard let authentication = user.authentication else { return }
+        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
+                                                       accessToken: authentication.accessToken)
+        
+        //Authenticate with firebase using credential
+        Auth.auth().signIn(with: credential) { (user, error) in
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            }
+            // User is signed in
+            // ...
+        }
+    }
+    
+//    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
+//        <#code#>
+//    }
+    
 }
 

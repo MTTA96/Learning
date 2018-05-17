@@ -11,6 +11,7 @@ target 'Restaurants' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'GoogleSignIn'
+  pod 'FBSDKLoginKit'
   pod 'FirebaseUI'
   pod 'Fabric'
   pod 'Crashlytics', '~> 3.10.1'
