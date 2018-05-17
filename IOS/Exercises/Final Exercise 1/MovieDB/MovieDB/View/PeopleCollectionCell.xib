@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PersonCell" id="gTV-IL-0wX" customClass="PeopleCollectionViewCell" customModule="MovieDB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="159" height="159"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="159" height="159"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iai-97-xCE">
+                        <rect key="frame" x="0.0" y="0.0" width="159" height="159"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QDx-MX-0uo">
+                                <rect key="frame" x="0.0" y="0.0" width="159" height="159"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OUA-lM-MI5">
+                                <rect key="frame" x="0.0" y="125" width="159" height="34"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5w-cz-mK5">
+                                        <rect key="frame" x="8" y="0.0" width="143" height="34"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.011764705882352941" green="0.011764705882352941" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="J5w-cz-mK5" firstAttribute="top" secondItem="OUA-lM-MI5" secondAttribute="top" id="mce-Wo-dV9"/>
+                                    <constraint firstItem="J5w-cz-mK5" firstAttribute="leading" secondItem="OUA-lM-MI5" secondAttribute="leading" constant="8" id="oEB-dw-jp2"/>
+                                    <constraint firstAttribute="trailing" secondItem="J5w-cz-mK5" secondAttribute="trailing" constant="8" id="tWe-AF-Jwl"/>
+                                    <constraint firstAttribute="bottom" secondItem="J5w-cz-mK5" secondAttribute="bottom" id="uLd-qV-0g0"/>
+                                    <constraint firstAttribute="height" constant="34" id="z5A-bi-anQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QDx-MX-0uo" firstAttribute="top" secondItem="Iai-97-xCE" secondAttribute="top" id="6sv-oZ-VqU"/>
+                            <constraint firstAttribute="trailing" secondItem="QDx-MX-0uo" secondAttribute="trailing" id="A10-7R-WBP"/>
+                            <constraint firstAttribute="trailing" secondItem="OUA-lM-MI5" secondAttribute="trailing" id="PUj-kX-ZO8"/>
+                            <constraint firstItem="OUA-lM-MI5" firstAttribute="leading" secondItem="Iai-97-xCE" secondAttribute="leading" id="PYi-Yz-jH1"/>
+                            <constraint firstAttribute="bottom" secondItem="OUA-lM-MI5" secondAttribute="bottom" id="hVb-ay-eBX"/>
+                            <constraint firstAttribute="bottom" secondItem="QDx-MX-0uo" secondAttribute="bottom" id="nsx-DA-t9e"/>
+                            <constraint firstItem="QDx-MX-0uo" firstAttribute="leading" secondItem="Iai-97-xCE" secondAttribute="leading" id="yvv-1K-QSR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Iai-97-xCE" secondAttribute="trailing" id="4m2-Ov-Idc"/>
+                <constraint firstItem="Iai-97-xCE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="FFG-S3-um3"/>
+                <constraint firstAttribute="bottom" secondItem="Iai-97-xCE" secondAttribute="bottom" id="Jm8-6o-gsj"/>
+                <constraint firstItem="Iai-97-xCE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="OhT-KH-Bch"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="personImageView" destination="QDx-MX-0uo" id="4Tl-KO-YoA"/>
+                <outlet property="titleLabel" destination="J5w-cz-mK5" id="sdY-io-FtS"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
