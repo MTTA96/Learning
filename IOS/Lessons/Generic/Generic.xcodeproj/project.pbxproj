@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		490A010E20AE6F7B005C1C48 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490A010D20AE6F7B005C1C48 /* TableViewController.swift */; };
+		498C7D7D20AEBBC800559DC6 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C7D7C20AEBBC800559DC6 /* Reusable.swift */; };
+		498C7D7F20AEBC6B00559DC6 /* StoryboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C7D7E20AEBC6B00559DC6 /* StoryboardManager.swift */; };
 		49D63DDF20AD801400527507 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D63DDE20AD801400527507 /* AppDelegate.swift */; };
 		49D63DE120AD801400527507 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D63DE020AD801400527507 /* ViewController.swift */; };
 		49D63DE420AD801400527507 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D63DE220AD801400527507 /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		490A010D20AE6F7B005C1C48 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		498C7D7C20AEBBC800559DC6 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		498C7D7E20AEBC6B00559DC6 /* StoryboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardManager.swift; sourceTree = "<group>"; };
 		49D63DDB20AD801400527507 /* Generic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Generic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49D63DDE20AD801400527507 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49D63DE020AD801400527507 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,12 +49,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		490A010C20AE6F24005C1C48 /* Table */ = {
+		490A010C20AE6F24005C1C48 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				49D63DE020AD801400527507 /* ViewController.swift */,
+				49D63DF520AD805400527507 /* HomeViewController.swift */,
 				490A010D20AE6F7B005C1C48 /* TableViewController.swift */,
 			);
-			path = Table;
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		498C7D7A20AEB4B600559DC6 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				49D63DF720AD817800527507 /* StoryBoard.swift */,
+				49D63DE220AD801400527507 /* Main.storyboard */,
+				49D63DEA20AD801400527507 /* LaunchScreen.storyboard */,
+				49D63DF320AD802D00527507 /* Home.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		498C7D7B20AEBBAB00559DC6 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				498C7D7C20AEBBC800559DC6 /* Reusable.swift */,
+				498C7D7E20AEBC6B00559DC6 /* StoryboardManager.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		49D63DD220AD801400527507 = {
@@ -72,17 +98,13 @@
 		49D63DDD20AD801400527507 /* Generic */ = {
 			isa = PBXGroup;
 			children = (
-				490A010C20AE6F24005C1C48 /* Table */,
+				498C7D7B20AEBBAB00559DC6 /* Util */,
 				49D63DDE20AD801400527507 /* AppDelegate.swift */,
-				49D63DE020AD801400527507 /* ViewController.swift */,
-				49D63DE220AD801400527507 /* Main.storyboard */,
+				498C7D7A20AEB4B600559DC6 /* StoryBoard */,
+				490A010C20AE6F24005C1C48 /* ViewController */,
 				49D63DE820AD801400527507 /* Assets.xcassets */,
-				49D63DEA20AD801400527507 /* LaunchScreen.storyboard */,
 				49D63DED20AD801400527507 /* Info.plist */,
 				49D63DE520AD801400527507 /* Generic.xcdatamodeld */,
-				49D63DF320AD802D00527507 /* Home.storyboard */,
-				49D63DF520AD805400527507 /* HomeViewController.swift */,
-				49D63DF720AD817800527507 /* StoryBoard.swift */,
 			);
 			path = Generic;
 			sourceTree = "<group>";
@@ -166,6 +188,8 @@
 				49D63DE720AD801400527507 /* Generic.xcdatamodeld in Sources */,
 				49D63DDF20AD801400527507 /* AppDelegate.swift in Sources */,
 				49D63DF620AD805400527507 /* HomeViewController.swift in Sources */,
+				498C7D7F20AEBC6B00559DC6 /* StoryboardManager.swift in Sources */,
+				498C7D7D20AEBBC800559DC6 /* Reusable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

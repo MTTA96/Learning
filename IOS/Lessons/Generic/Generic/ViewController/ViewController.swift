@@ -15,8 +15,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         let tableView = UITableView()
         
-        let nib = UINib(nibName: "khkj", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "hkkjkhk")
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,10 +23,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func button(_ sender: Any) {
-//        let storyboard = UIStoryboard(name: "Home", bundle: nil)
-//        let homeVC = storyboard.instantiateViewController(withIdentifier: "HomeViewController")
         
-        let homeVC = StoryBoard.home.load(HomeViewController.self)
+        let homeVC = StoryboardManager.home.load(HomeViewController.self, bundle: nil)
         present(homeVC, animated: true, completion: nil)
     }
     
