@@ -10,7 +10,6 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-    let viewModel = TableViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +21,7 @@ class TableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
