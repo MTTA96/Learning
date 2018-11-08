@@ -4,44 +4,56 @@ import {
     Text,
     TextInput,
     StyleSheet,
-    EStyleSheet,
     Image,
     ImageBackground,
-    Button,
+    Button, 
     Alert,
     Keyboard,
     TouchableOpacity,
 } from 'react-native'
-import axios from 'axios'
-import axiosMiddleware from 'redux-axios-middleware'
 import { red, yellow } from 'ansi-colors'
 import Colors from './../constants/Colors'
+import * as actions from './../actions'
+import {connect} from 'react-redux'
+import combineReducers from '../reducers'
 
-import reducer from './../reducer/reducer'
-
-const clinet = axios.create({
-    baseURL: 'https://www.themoviedb.org',
-    responseType: 'json'
-})
-
-const store = createStore(reducer, applyMiddleware(axiosMiddleware(client)))
-
-export default class Signin extends React.Component {
+class SigninScreen extends React.Component {
 
     constructor(props) {
         super(props)
-        // this._onPressLogin = this._onPressLogin.bind(this)
         this.state = {
             title: "MOVIEDB"
         }
     }
 
-    // Actions
+    /// Actions
 
     _onPressLogin = () => {
-
         this.txtUserName.blur()
         this.txtPassword.blur()
+        this.props.getToken()
+            .then(() => {
+                Alert.alert(
+                'Get token',
+                'Success',
+                [
+                  {text: 'OK', onPress: () => console.log('OK Pressed')},
+                ],
+                { cancelable: false }
+              )
+            })
+            .catch((response) => {
+
+                Alert.alert(
+                    'Get token',
+                    'Fail',
+                    [
+                      {text: 'OK', onPress: () => console.log('OK Pressed')},
+                    ],
+                    { cancelable: false }
+                )
+                
+            })
     }
 
     render() {
@@ -105,7 +117,6 @@ export default class Signin extends React.Component {
                         </Text>
                     </View>
 
-
                     {/* Logos */}
 
                     <View style={styles.logoContainer}>
@@ -122,6 +133,13 @@ export default class Signin extends React.Component {
     }
 
 }
+
+const mapStateToProps = (state) => {
+    state_name:state.userReducer
+}
+
+export default connect(null, actions) (SigninScreen)
+
 // const rem = EStyleSheet.build({$rem: entireScreenWidth / 380});
 const styles = StyleSheet.create({
 
